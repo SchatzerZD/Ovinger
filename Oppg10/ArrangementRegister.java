@@ -34,17 +34,20 @@ public class ArrangementRegister{
   }
 
   public void findArrangementBetweenDates(int firstDate, int secondDate){
-    ArrayList<long> timeList = new ArrayList<long>();
+    ArrayList<Long> timeList = new ArrayList<Long>();
     for(var i = 0; i<arrangements.size(); i++){
       if((arrangements.get(i).getTime()/10000) >= firstDate && (arrangements.get(i).getTime()/10000) <= secondDate){
         timeList.add(arrangements.get(i).getTime());
       }
     }
-    long[] timeArray = timeList.toArray();
+    long[] timeArray = new long[timeList.size()];
+    for(var i = 0; i<timeArray.length; i++){
+      timeArray[i] = timeList.get(i);
+    }
     Arrays.sort(timeArray);
 
     for(var i = 0; i<arrangements.size(); i++){
-      for(var j = 0; j<timeArray.length(); j++){
+      for(var j = 0; j<timeArray.length; j++){
         if(arrangements.get(i).getTime() == timeArray[j]){
           arrangements.get(i).printString();
         }
@@ -86,6 +89,16 @@ public class ArrangementRegister{
     }
 
     return timeList;
+  }
+
+  public ArrayList<Arrangement> listOfAllArrangements(){
+    return arrangements;
+  }
+
+  public void printArrangements(ArrayList<Arrangement> list){
+    for(var i = 0; i<list.size(); i++){
+      list.get(i).printString();
+    }
   }
 
 

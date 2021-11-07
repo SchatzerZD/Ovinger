@@ -1,7 +1,7 @@
-import java.util.Calendar;
+import java.util.Random;
 
 public class Arrangement{
-  private final long ID;
+  private final int ID;
   private String name;
   private String place;
   private String arranger;
@@ -10,7 +10,15 @@ public class Arrangement{
 
 
   public Arrangement(String name, String place, String arranger, String type, long time){
-    this.ID = Calendar.getTimeInMillis()
+    Random randomNr = new Random();
+    int number = randomNr.nextInt() % 100000;
+    if(number < 0){
+      number *= -1;
+      this.ID = number;
+    }else{
+      this.ID = number;
+    }
+
     this.name = name;
     this.place = place;
     this.arranger = arranger;
@@ -18,7 +26,7 @@ public class Arrangement{
     this. time = time;
   }
 
-  public long getId(){
+  public int getId(){
     return ID;
   }
 
@@ -35,7 +43,7 @@ public class Arrangement{
   }
 
   public String getType(){
-    return Type;
+    return type;
   }
 
   public long getTime(){
@@ -43,8 +51,8 @@ public class Arrangement{
   }
 
   public String toString(){
-    return "ID: " + this.getId() + " || Name: " + this.getName() + " || Place: " + this.getPlace() +
-    "\n Arranger: " + this.getArranger() + " || Type: " + this.getType() + " || Time: " + this.getTime();
+    return "\nID: " + this.getId() + " || Name: " + this.getName() + " || Place: " + this.getPlace() +
+    "\nArranger: " + this.getArranger() + " || Type: " + this.getType() + " || Time: " + this.getTime();
   }
 
   public void printString(){
