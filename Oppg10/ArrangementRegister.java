@@ -46,10 +46,10 @@ public class ArrangementRegister{
     }
     Arrays.sort(timeArray);
 
-    for(var i = 0; i<arrangements.size(); i++){
-      for(var j = 0; j<timeArray.length; j++){
-        if(arrangements.get(i).getTime() == timeArray[j]){
-          arrangements.get(i).printString();
+    for(var i = 0; i<timeArray.length; i++){
+      for(var j = 0; j<arrangements.size(); j++){
+        if(arrangements.get(j).getTime() == timeArray[i]){
+          arrangements.get(j).printString();
         }
       }
     }

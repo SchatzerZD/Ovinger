@@ -8,6 +8,7 @@ class Main{
     Arrangement concert1 = new Arrangement("Concert1", "Trondheim", "MJ", "Concert", 202201141600L);
     Arrangement concert2 = new Arrangement("Concert2", "Trondheim", "MJ", "Concert", 202201151600L);
     Arrangement concert3 = new Arrangement("Concert3", "Trondheim", "MJ", "Concert", 202201161600L);
+    Arrangement concert4 = new Arrangement("Concert4", "Trondheim", "MJ", "Concert", 202201161800L);
 
     //System.out.println(e3.toString());
     //System.out.println(christmas.toString());
@@ -16,9 +17,10 @@ class Main{
 
     arrangementList.registerArrangement(e3);
     arrangementList.registerArrangement(christmas);
+    arrangementList.registerArrangement(concert3);
+    arrangementList.registerArrangement(concert4);
     arrangementList.registerArrangement(concert1);
     arrangementList.registerArrangement(concert2);
-    arrangementList.registerArrangement(concert3);
 
     boolean loop = true;
 
@@ -48,7 +50,7 @@ class Main{
       }
     }
 
-    
+
 
   }
 
