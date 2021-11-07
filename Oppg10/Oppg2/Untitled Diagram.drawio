@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-07T17:42:54.729Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="30cAm1pijwMWZyFrpdCQ" version="15.7.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-07T17:44:08.402Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="2rDSPkV75PLuofqnlwsk" version="15.7.0" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -18,6 +18,9 @@
         <mxCell id="zkfFHV4jXpPFQw0GAbJ--5" value="+MenuRegister()&#xa;+void registerNewMeal(Meal meal, Menu menu)&#xa;+void findMeal(String name)&#xa;+void findMealByType(String type)&#xa;+void registerNewMenu(Menu newMenu)&#xa;+void findMenusByPrice(double firstPrice, double lastPrice)&#xa;+String toString()" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--0" vertex="1">
           <mxGeometry y="60" width="340" height="110" as="geometry" />
         </mxCell>
+        <mxCell id="oyjOZgAlCbVmdX59vqGH-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="zkfFHV4jXpPFQw0GAbJ--6" target="zkfFHV4jXpPFQw0GAbJ--0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="zkfFHV4jXpPFQw0GAbJ--6" value="Menu" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="50" y="307" width="240" height="316" as="geometry">
             <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
@@ -34,6 +37,9 @@
         </mxCell>
         <mxCell id="oyjOZgAlCbVmdX59vqGH-3" value="&lt;p style=&quot;line-height: 1.2&quot;&gt;+Menu(String name)&lt;/p&gt;&lt;p style=&quot;line-height: 1.2&quot;&gt;+String getName()&lt;/p&gt;&lt;p style=&quot;line-height: 1.2&quot;&gt;+ArrayList&amp;lt;Meal&amp;gt; getAllMeals(String type)&lt;/p&gt;&lt;p style=&quot;line-height: 1.2&quot;&gt;+void registerNewMeal(Meal meal)&lt;br&gt;+String getAllMealsByType(String type)&lt;br&gt;+String searchForMeal(String name)&lt;/p&gt;&lt;p style=&quot;line-height: 1.2&quot;&gt;&lt;span&gt;+double getTotalPrice()&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 1.2&quot;&gt;+String toString()&lt;/p&gt;&lt;p style=&quot;line-height: 1.2&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=0;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--6">
           <mxGeometry y="86" width="240" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="oyjOZgAlCbVmdX59vqGH-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="zkfFHV4jXpPFQw0GAbJ--13" target="oyjOZgAlCbVmdX59vqGH-3">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="zkfFHV4jXpPFQw0GAbJ--13" value="Meal" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="390" y="345" width="260" height="240" as="geometry">
