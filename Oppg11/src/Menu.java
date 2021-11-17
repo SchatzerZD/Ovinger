@@ -40,19 +40,19 @@ public class Menu {
         return menuChoice;
     }
 
-    public int getInt(String displayMessage){
+    private int getInt(String displayMessage){
         Scanner sc = new Scanner(System.in);
         System.out.println(displayMessage);
         return sc.nextInt();
     }
 
-    public String getString(String displayMessage){
+    private String getString(String displayMessage){
         Scanner sc = new Scanner(System.in);
         System.out.println(displayMessage);
         return sc.nextLine();
     }
 
-    public double getDouble(String displayMessage){
+    private double getDouble(String displayMessage){
         Scanner sc = new Scanner(System.in);
         System.out.println(displayMessage);
         return sc.nextDouble();
